@@ -2,28 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Template Header</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Template BEM</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Твій зкомпільований SCSS -->
   <link rel="stylesheet" href="dist/css/styles.css">
 </head>
 <body>
 
+  <!-- Header -->
   <header class="header">
-    <div class="logo">
-      <span class="logo-icon">◉</span>
+    <div class="header__logo">
+      <span class="header__logo-icon">◉</span>
     </div>
-    <nav class="nav">
-      <a href="#">Tutors</a>
-      <a href="#">Group classes</a>
-      <a href="#">Corporate training</a>
-      <a href="#">Become a tutor</a>
-      <a href="#">FAQ</a>
+    <nav class="header__nav">
+      <a href="#" class="header__link">Tutors</a>
+      <a href="#" class="header__link">Group classes</a>
+      <a href="#" class="header__link">Corporate training</a>
+      <a href="#" class="header__link">Become a tutor</a>
+      <a href="#" class="header__link">FAQ</a>
     </nav>
-    <a href="#" class="login">Log in</a>
+    <a href="#" class="header__login">Log in</a>
   </header>
 
- 
+  <!-- Hero Section -->
   <section class="container py-5">
     <div class="row align-items-center">
       <div class="col-md-6 text-center mb-4 mb-md-0">
@@ -43,24 +48,74 @@
     </div>
   </section>
 
-  <div class="container">
-    <div class="hero">
-        <h1>Learn English for everyday situations</h1>
-        <p>Through our rotation of international teachers, you'll be exposed to a wide variety of accents, all contexts, expressions, and cultures.</p>
-        <button>Start learning</button>
-        <div class="testimonial">
-            <p>“My time slot didn't work well, thanks to teacher's patience and tips, very helpful!”</p>
-            <span>Leonardo DiCaprio, 17 years old</span>
+  <!-- Hero + Card Layout -->
+  <div class="layout">
+    <div class="layout__hero hero">
+      <h1 class="hero__title">Learn English for everyday situations</h1>
+      <p class="hero__text">Through our rotation of international teachers, you'll be exposed to a wide variety of accents, all contexts, expressions, and cultures.</p>
+      <button class="hero__button">Start learning</button>
+      <div class="hero__testimonial">
+        <p>“My time slot didn't work well, thanks to teacher's patience and tips, very helpful!”</p>
+        <span>Leonardo DiCaprio, 17 years old</span>
+      </div>
+    </div>
+
+    <div class="layout__card card">
+      <img src="images/2.png" alt="Illustration" class="card__img">
+      <h3 class="card__title">Daily communication</h3>
+      <p class="card__desc">School · Classes · Sports · Friends</p>
+      <button class="card__button">Watch a video</button>
+    </div>
+  </div>
+  <section class="benefits">
+    <div class="benefits__container">
+      <h2 class="benefits__title">Top-notch teachers, limitless learning</h2>
+      <p class="benefits__subtitle">
+        Language learning on your schedule, with teachers you can trust.
+        For language learners just like you.
+      </p>
+      <div class="benefits__items">
+        <div class="benefits__item">
+          <img src="images/3.png" alt="Verified teachers" class="benefits__icon">
+          <h3 class="benefits__item-title">1. Verified teachers</h3>
+          <p class="benefits__item-text">
+            Our community has over 10,000 expert tutors – all with prior
+            teaching experience, vetted by our team.
+          </p>
         </div>
+        <div class="benefits__item">
+          <img src="images/4.png" alt="Affordable lessons" class="benefits__icon">
+          <h3 class="benefits__item-title">2. Affordable lessons</h3>
+          <p class="benefits__item-text">
+            With lesson prices starting at $20, Verbling provides remote
+            language learning to fit any budget.
+          </p>
+        </div>
+        <div class="benefits__item">
+          <img src="images/5.png" alt="Flexibility" class="benefits__icon">
+          <h3 class="benefits__item-title">3. Convenience & flexibility</h3>
+          <p class="benefits__item-text">
+            We make learning happen on your schedule. Book lessons whenever you want to learn.
+          </p>
+        </div>
+      </div>
     </div>
-    <div class="card">
-        <img src="images/2.png" alt="Illustration">
-        <h3>Daily communication</h3>
-        <p>School · Classes · Sports · Friends</p>
-        <button>Watch a video</button>
+  </section>
+  <section class="testimonial">
+    <div class="testimonial__container">
+      <div class="testimonial__image-wrapper">
+        <img src="images/6.png" alt="Student photo" class="testimonial__image">
+      </div>
+      <div class="testimonial__content">
+        <p class="testimonial__quote">
+          “Your platform gave me an amazing opportunity to form a new habit to learn language regularly and of course improve my language skills. I received a letter with congratulations from the team.”
+        </p>
+        <p class="testimonial__author">
+          <strong>Margot Robbie</strong>, <span class="testimonial__age">16 years old</span>
+        </p>
+      </div>
     </div>
-</div>
-
-
+  </section>
+  
 </body>
 </html>

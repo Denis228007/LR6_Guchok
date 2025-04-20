@@ -1,0 +1,47 @@
+.benefits {
+    padding: 80px 20px;
+    background-color: #fff;
+    text-align: center;
+  
+    &__title {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+  
+    &__subtitle {
+      font-size: 1rem;
+      color: #666;
+      max-width: 600px;
+      margin: 0 auto 40px;
+    }
+  
+    &__items {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+  
+    &__item {
+      max-width: 300px;
+    }
+  
+    &__icon {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 20px;
+    }
+  
+    &__item-title {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+  
+    &__item-text {
+      font-size: 0.95rem;
+      color: #555;
+    }
+  }
+  

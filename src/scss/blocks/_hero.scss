@@ -1,0 +1,41 @@
+// Міксин для кнопок hero (і не тільки)
+@mixin hero-button {
+    background-color: #6c63ff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: #5549c4;
+    }
+  }
+  
+  .hero {
+    &__title {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+  
+    &__text {
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+  
+    &__button {
+      @include hero-button;
+    }
+  
+    &__testimonial {
+      font-style: italic;
+      margin-top: 20px;
+  
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+  

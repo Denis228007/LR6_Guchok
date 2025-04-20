@@ -1,0 +1,18 @@
+.layout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  
+    &__hero,
+    &__card {
+      flex: 1 1 45%;
+      margin: 20px;
+    }
+  
+    &__hero {
+      max-width: 500px;
+    }
+  }
+  

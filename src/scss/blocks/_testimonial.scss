@@ -1,0 +1,53 @@
+.testimonial {
+    padding: 80px 20px;
+    background-color: #fff;
+  
+    &__container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+    }
+  
+    &__image-wrapper {
+      flex: 0 0 auto;
+      border-radius: 30px;
+      overflow: hidden;
+      box-shadow: 0 30px 50px rgba(255, 0, 100, 0.1); // тінь як на скріншоті
+    }
+  
+    &__image {
+      width: 280px;
+      height: auto;
+      display: block;
+      border-radius: 30px;
+    }
+  
+    &__content {
+      max-width: 600px;
+    }
+  
+    &__quote {
+      font-size: 1.5rem;
+      line-height: 1.5;
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+  
+    &__author {
+      font-size: 1rem;
+      color: #333;
+  
+      strong {
+        font-weight: 600;
+      }
+    }
+  
+    &__age {
+      color: #999;
+    }
+  }
+  
