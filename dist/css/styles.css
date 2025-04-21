@@ -231,3 +231,69 @@
   font-size: 0.85rem;
   color: #888;
 }
+
+.promo__content {
+  text-align: left;
+}
+.promo__title {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  color: #333;
+}
+.promo__description {
+  font-size: 1rem;
+  color: #555;
+}
+.promo__form {
+  gap: 10px;
+}
+.promo__form .promo__input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 1rem;
+}
+.promo__form .promo__button {
+  background-color: #5a67d8;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+.promo__form .promo__button:hover {
+  background-color: #434190;
+}
+.promo__visual {
+  display: flex;
+  justify-content: center;
+}
+.promo__visual .promo__image {
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  background-color: #f8f9fa;
+}
+footer h5 {
+  font-size: 1rem;
+  color: #333;
+}
+footer a {
+  color: #6c757d;
+}
+footer a:hover {
+  color: #000;
+}
+footer hr {
+  border-color: #dee2e6;
+}
+footer .text-muted {
+  font-size: 0.875rem;
+}
+footer img {
+  transition: transform 0.3s ease;
+}
+footer img:hover {
+  transform: scale(1.1);
+}

@@ -4,16 +4,11 @@
   <meta charset="UTF-8">
   <title>Template BEM</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  
-  <!-- Твій зкомпільований SCSS -->
   <link rel="stylesheet" href="dist/css/styles.css">
 </head>
 <body>
 
-  <!-- Header -->
   <header class="header">
     <div class="header__logo">
       <span class="header__logo-icon">◉</span>
@@ -28,7 +23,7 @@
     <a href="#" class="header__login">Log in</a>
   </header>
 
-  <!-- Hero Section -->
+
   <section class="container py-5">
     <div class="row align-items-center">
       <div class="col-md-6 text-center mb-4 mb-md-0">
@@ -48,7 +43,7 @@
     </div>
   </section>
 
-  <!-- Hero + Card Layout -->
+
   <div class="layout">
     <div class="layout__hero hero">
       <h1 class="hero__title">Learn English for everyday situations</h1>
@@ -144,6 +139,93 @@
       </div>
     </div>
   </section>
+  <section class="promo bg-light py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        
+        <div class="col-lg-6 col-md-12">
+          <div class="promo__content">
+            <h2 class="promo__title fw-bold mb-4">Upgrade your language skills with our team</h2>
+            <p class="promo__description mb-4">
+              Our native-level teachers are located worldwide. Book them online by either following our curriculum or by
+              choosing the order yourself for greater flexibility.
+            </p>
+            <form class="promo__form d-flex gap-2">
+              <input type="email" class="form-control promo__input" placeholder="Enter your email address" />
+              <button type="submit" class="btn btn-primary promo__button">Join Now</button>
+            </form>
+          </div>
+        </div>
+       
+        <div class="col-lg-6 col-md-12">
+          <div class="promo__visual d-flex justify-content-center">
+            <img src="images/planets.png" alt="Planets illustration" class="promo__image img-fluid" style="width: 896px; height: 777px;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="bg-light py-5">
+    <div class="container">
+      <div class="row text-center text-md-start">
+       
+        <div class="col-md-3 col-6 mb-4">
+          <h5 class="text-uppercase fw-bold">Product</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-muted text-decoration-none">Autocapture</a></li>
+            <li><a href="#" class="text-muted text-decoration-none">Data Governance</a></li>
+            <li><a href="#" class="text-muted text-decoration-none">Virtual Events</a></li>
+            <li><a href="#" class="text-muted text-decoration-none">Virtual Users</a></li>
+            <li><a href="#" class="text-muted text-decoration-none">Behavioral Analytics</a></li>
+            <li><a href="#" class="text-muted text-decoration-none">Connect</a></li>
+          </ul>
+        </div>
+     
+        <div class="col-md-3 col-6 mb-4">
+          <h5 class="text-uppercase fw-bold">Explore</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-muted text-decoration-none">Resources</a></li>
+            <li><a href="#" class="text-muted text-decoration-none">Blog</a></li>
+            <li><a href="#" class="text-muted text-decoration-none">Documents</a></li>
+          </ul>
+        </div>
+       
+        <div class="col-md-3 col-6 mb-4">
+          <h5 class="text-uppercase fw-bold">Community</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-muted text-decoration-none">Community Central</a></li>
+            <li><a href="#" class="text-muted text-decoration-none">Support</a></li>
+            <li><a href="#" class="text-muted text-decoration-none">Help</a></li>
+            <li><a href="#" class="text-muted text-decoration-none">My info</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-md-3 col-6 mb-4">
+          <h5 class="text-uppercase fw-bold">Company</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-muted text-decoration-none">About us</a></li>
+            <li><a href="#" class="text-muted text-decoration-none">Partners</a></li>
+            <li><a href="#" class="text-muted text-decoration-none">Customers</a></li>
+            <li><a href="#" class="text-muted text-decoration-none">Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      
+      <div class="text-center">
+        <div class="mb-3">
+          <img src="images/logo.png" alt="Company Logo" class="img-fluid" style="max-height: 50px;" />
+        </div>
+        <p class="mb-0 text-muted">© 2022 Elanguage. All rights reserved.</p>
+        
+        <div class="d-flex justify-content-center gap-3 mt-2">
+          <a href="#"><img src="images/facebook.png" alt="Facebook" width="8" height="18" /></a>
+          <a href="#"><img src="images/twitter.png" alt="Twitter" width="19" height="15" /></a>
+          <a href="#"><img src="images/instagram.png" alt="Instagram" width="20" height="19" /></a>
+        </div>
+      </div>
+    </div>
+  </footer>
   
   
 </body>
