@@ -10,7 +10,6 @@
 
 </head>
 <body>
-
   <header class="header">
     <div class="header__logo">
       <a href="/">
@@ -25,10 +24,14 @@
       <a href="#" class="header__link">FAQ</a>
     </nav>
     <a href="#" class="header__login">Log in</a>
+
+    <div class="header__burger" id="burger-icon">
+      <span class="burger-line"></span>
+      <span class="burger-line"></span>
+      <span class="burger-line"></span>
+    </div>
   </header>
   
-
-
   <section class="container py-5">
     <div class="row align-items-center">
       <div class="col-md-6 text-center mb-4 mb-md-0">
@@ -238,6 +241,14 @@
   </footer>
   
   
+  <script>
+    const burgerIcon = document.getElementById("burger-icon");
+    const nav = document.querySelector(".header__nav");
+  
+    burgerIcon.addEventListener("click", () => {
+      nav.classList.toggle("open");
+    });
+  </script>
   
 </body>
 </html>
